@@ -1,13 +1,13 @@
+from pathlib import Path
+
 import click
 import pandas as pd
-from pathlib import Path
+
 CONTEXT_SETTINGS = dict(help_option_names=["-h", "--help"])
 
 
 @click.command(context_settings=CONTEXT_SETTINGS)
-@click.option(
-    "--path_to_file", prompt="Path to csv file", help="Path to csv file"
-)
+@click.option("--path_to_file", prompt="Path to csv file", help="Path to csv file")
 def start_get_parquet_from_csv(path_to_file) -> None:
     """
     Run function get_parquet_from_csv with 'path_to_file' parameter, got as command line parameter.
@@ -15,7 +15,7 @@ def start_get_parquet_from_csv(path_to_file) -> None:
     :return: None
     """
     df = get_df_from_csv(path_to_file)
-    df.to_parquet(f'{Path(path_to_file).stem}.parquet')
+    df.to_parquet(f"{Path(path_to_file).stem}.parquet")
 
 
 def get_df_from_csv(path_to_file: str) -> pd.DataFrame:
