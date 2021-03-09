@@ -10,7 +10,7 @@ CONTEXT_SETTINGS = dict(help_option_names=["-h", "--help"])
 @click.option("--path_to_file", prompt="Path to csv file", help="Path to csv file")
 def start_get_parquet_from_csv(path_to_file) -> None:
     """
-    Run function get_parquet_from_csv with 'path_to_file' parameter, got as command line parameter.
+    Run function get_parquet_from_csv with 'path_to_file' parameter, got as command line parameter and create a parquet-file.
     :param path_to_file:
     :return: None
     """
@@ -20,7 +20,7 @@ def start_get_parquet_from_csv(path_to_file) -> None:
 
 def get_df_from_csv(path_to_file: str) -> pd.DataFrame:
     """
-    Get path to csv-file, create pandas dataframe and create parquet-file
+    Get a path to csv-file, create a pandas dataframe
     :param path_to_file:
     :return: None
     """
