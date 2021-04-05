@@ -1,8 +1,8 @@
 click~=7.1.2
-numpy==1.19.3
 pytest
-pandas~=1.2.3
 pyarrow~=3.0.0
 black
 isort
 pre-commit
+pyspark
+chispa
