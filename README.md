@@ -22,4 +22,4 @@ Usage:
 
 example:
 
-tasks.py --path_to_file C:\Users\TImur\Desktop\big_data_epam\expedia-hotel-recommendations\train.csv --task all --mode file
+>tasks.py --path_to_file C:\Users\TImur\Desktop\big_data_epam\expedia-hotel-recommendations\train.csv --task all --mode file
