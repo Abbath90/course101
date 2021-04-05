@@ -17,8 +17,8 @@ Usage:
 >tasks.py --path_to_file <path_to_file> [--tasks <number_of_tasks>] [--mode <output_mode>]  - usage
 >tasks.py --help - for help
 
---tasks - option for choosing of number of tasks. Can be 1, 2, 3 or all.
---mode - option for choosing output mode. Can be 'show' - for showing result in stdout and 'file' - for creation of file structure in './result' directory
+>--tasks - option for choosing of number of tasks. Can be 1, 2, 3 or all.
+>--mode - option for choosing output mode. Can be 'show' - for showing result in stdout and 'file' - for creation of file structure in './result' directory
 
 example:
 
